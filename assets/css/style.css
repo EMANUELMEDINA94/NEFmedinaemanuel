@@ -1,0 +1,721 @@
+/* HEADER */
+header.fixed-top {
+    background-color: rgba(224, 224, 224, 1);
+    padding: 8px 0;
+    z-index: 1030;
+}
+
+/* Logo */
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Hamburguesa */
+.navbar-toggler i {
+    font-size: 24px;
+    color: black;
+}
+
+/* Menú links desktop */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: black;
+    padding: 4px 8px;
+}
+
+/* Buscador */
+.buscador-form .form-control {
+    border-radius: 50px;
+    padding: 5px 12px;
+    font-size: 14px;
+}
+
+.buscador-form .btn {
+    border: none;
+    background: none;
+    color: black;
+}
+
+/* Carrito */
+.carrito-btn {
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: black;
+}
+
+/* Menú desplegable mobile/tablet */
+#menuPrincipal {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid #eee;
+    z-index: 1040;
+}
+
+#menuPrincipal .nav-link {
+    padding: 10px 0;
+}
+
+/*main*/
+.main {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(-5vw);
+}
+
+.main div h1 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center
+}
+
+.bannerprincipal {
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerprincipal img {
+    margin-top: 55px;
+    margin-bottom: 0%;
+    height: 800px;
+}
+
+.bannerprincipal p {
+    margin-top: 0%;
+}
+
+.main div {
+    width: 100%;
+}
+
+.main p {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 48, 48);
+}
+
+/*enlaces a ropa superior e inferior*/
+.superiorinferior {
+    display: flex;
+    justify-content: center;
+}
+
+.superiorinferior img {
+    border-radius: 10px;
+    width: 70%;
+    height: 85%;
+}
+
+#superior {
+    height: 50%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inferior {
+    height: 50%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*ofertas*/
+.ofertas {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.div1 {
+    font-size: 130%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.div2 img {
+    border-radius: 10px;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 700px;
+    box-shadow: 0 3px 6px rgb(0, 0, 0);
+}
+
+.enlacetablet {
+    display: none;
+}
+
+/*local*/
+.local {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.direccion {
+    margin-top: 5%;
+    font-size: 120%;
+    margin-left: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vidriera img {
+    border-radius: 10px;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 700px;
+    box-shadow: 0 3px 6px rgb(0, 0, 0);
+}
+
+.compra {
+    text-decoration-line: underline;
+    color: rgba(2, 55, 99, 0.527);
+    font-size: 15px;
+}
+
+.localtablet {
+    display: none;
+}
+
+/* footer */
+.footer {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(-5vw);
+    background-color: rgba(224, 224, 224, 1);
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mail {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario {
+    font-size: 18px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    font-size: 15px;
+    margin-top: 5%;
+    background-color: rgba(224, 224, 224, 1);
+    border: none;
+    border-bottom: black 1px solid;
+}
+
+.boton {
+    background-color: rgba(224, 224, 224, 1);
+    font-size: 15px;
+    margin-top: 5%;
+    height: 30px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+}
+
+.mail button:hover {
+    color: white;
+    background-color: black;
+}
+
+.infofooter ul {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.infofooter ul li {
+    margin: 0% 90px 0%;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.redes {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.redes nav a {
+    font-size: 30px;
+    color: black;
+}
+
+.derechos {
+    margin-top: 3%;
+    display: block;
+    text-align: center;
+}
+
+/* HTML SUPERIOR, INFERIOR Y OFERTAS */
+.bannersuperior {
+    margin-top: 50px;
+}
+
+.bannersuperior img {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(-5vw);
+}
+
+.mainsuperior {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.mainsuperior h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.lista {
+    margin-top: 5%;
+    border: none;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.prendasuperior {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prendasuperior div {
+    margin-top: 10%;
+}
+
+.prendasuperior img {
+    width: 400px;
+    height: 600px;
+    box-shadow: 0 3px 6px rgb(0, 0, 3)
+}
+
+.prendasuperior img:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.prendasuperior p {
+    margin-top: 15px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.cuotas {
+    text-decoration: underline;
+}
+
+.oferta {
+    text-decoration: line-through;
+}
+
+/* SOBRE NOSOTROS */
+.mainnosotros {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7%;
+    font-size: large;
+}
+
+
+.nuestrahistoria {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 8%;
+    text-align: justify;
+    hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    justify-items: center;
+}
+
+.nuestrahistoria h2 {
+    text-align: center;
+}
+
+/*titulos y enlaces*/
+h1 {
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+
+a {
+    color: rgb(87, 87, 87);
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+/*body*/
+
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* FORMATO PARA TABLET */
+@media (max-width: 991px) {
+
+    header .row.align-items-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .bannerprincipal img {
+        margin-top: 50px;
+        height: 550px;
+    }
+
+    .main p {
+        font-size: 17px;
+    }
+
+    .superiorinferior a {
+        font-size: 17px;
+    }
+
+    /*OFERTAS*/
+    .ofertas {
+        margin-top: 10%;
+        flex-direction: column;
+    }
+
+    .div1 a {
+        display: none;
+    }
+
+    .div2 {
+        justify-items: center;
+    }
+
+    .div2 img {
+        margin-top: 2%;
+    }
+
+    .enlacetablet {
+        margin-top: 10px;
+        display: flex;
+        text-decoration: underline;
+        color: rgb(87, 87, 87)
+    }
+
+    .enlacetablet a {
+        font-size: 17px;
+    }
+
+    /*LOCAL*/
+    .local {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .direccion {
+        margin-left: 0%;
+    }
+
+    .direccion p {
+        font-size: 17px;
+    }
+
+    .direccion h2 {
+        display: none;
+    }
+
+    .compra {
+        display: none;
+    }
+
+    .localtablet {
+        display: flex;
+        justify-content: center;
+    }
+
+    .vidriera {
+        justify-items: center;
+    }
+
+    .vidriera img {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    /*FOOTER*/
+    .infofooter ul li {
+        font-size: 12px;
+        margin: 0% 70px 0%;
+        width: 130px;
+        height: 130px;
+    }
+
+    /* HTML SUPERIOR, INFERIOR Y OFERTAS */
+
+    .mainsuperior {
+        font-size: 17px;
+    }
+
+    .prendasuperior {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .prendasuperior img {
+        margin-top: 7%;
+        width: 300px;
+        height: 500px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    /* SOBRE NOSOTROS */
+    .mainnosotros {
+        margin: 100px 40px 0;
+        text-align: center;
+    }
+
+    .nuestrahistoria {
+        column-gap: 5%;
+    }
+}
+
+/* FORMATO PARA CELULAR */
+@media (max-width: 480px) {
+
+    .main {
+        margin-left: 0%;
+    }
+
+    .bannerprincipal img {
+        height: 0%
+    }
+
+    .bannerprincipal p {
+        font-size: 10px;
+    }
+
+    .main div h1 {
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*SECCION SUP/INF*/
+    .superiorinferior {
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .superiorinferior img {
+        width: 80%;
+    }
+
+    .superiorinferior a {
+        font-family: monospace;
+        text-decoration: underline;
+        font-size: 12px;
+    }
+
+    /*OFERTAS*/
+    .div2 img {
+        width: 80%;
+        height: 250px;
+    }
+
+    .div2 a {
+        font-size: 12px;
+    }
+
+    /*SECCION LOCAL*/
+    .vidriera img {
+        margin-bottom: 10px;
+        width: 80%;
+        height: 250px;
+    }
+
+    .direccion p {
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    /*FOOTER*/
+    .footer {
+        margin-left: 0%;
+    }
+    
+    .formulario {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        font-size: 12px;
+    }
+
+    .boton {
+        font-size: 12px;
+        height: 22px;
+    }
+
+    .infofooter ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+        padding: 0%;
+
+    }
+
+    .infofooter ul li {
+        font-size: 10px;
+        margin: 5% 20px 5%;
+
+    }
+
+    .redes nav a {
+        font-size: 17px;
+    }
+
+    .derechos p {
+        font-size: 10px;
+        margin-top: 3%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*HTML SUPERIOR, INFERIOR Y OFERTAS*/
+    .bannersuperior img {
+        margin-left: calc(0%);
+    }
+
+    .mainsuperior {
+        margin-top: 10%;
+        margin-left: 3%;
+        margin-bottom: 0%;
+        font-size: 10px;
+    }
+
+    .prendasuperior {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .lista {
+        font-size: 10px;
+    }
+
+    .prendasuperior img {
+        margin-top: 7%;
+        width: 200px;
+        height: 300px;
+    }
+
+    .prendasuperior p {
+        font-size: 13px;
+    }
+
+    /*SOBRENOSOTROS*/
+    .mainnosotros {
+        margin: 100px 25px 0;
+    }
+
+    .mainnosotros p {
+        text-align: center;
+    }
+
+    .nuestrahistoria {
+        margin: 20px 80px 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nuestrahistoria p {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+
+    body {
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
