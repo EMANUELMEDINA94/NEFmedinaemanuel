@@ -584,9 +584,14 @@ body {
     }
 
     /*OFERTAS*/
+    .ofertas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .div2 img {
-        width: 80%;
-        height: 250px;
+        width: 320px;
+        height: 300px;
     }
 
     .div2 a {
@@ -595,9 +600,10 @@ body {
 
     /*SECCION LOCAL*/
     .vidriera img {
+        justify-content: center;
         margin-bottom: 10px;
-        width: 80%;
-        height: 250px;
+        width: 320px;
+        height: 300px;
     }
 
     .direccion p {
