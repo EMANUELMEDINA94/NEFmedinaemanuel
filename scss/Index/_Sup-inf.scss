@@ -1,0 +1,47 @@
+@use 'sass:map';
+@use '../utilities/maps';
+@use '../Utilities/extends';
+
+/*enlaces a ropa superior e inferior*/
+.superiorinferior {
+    display: flex;
+    justify-content: center;
+    margin-top: map.get(maps.$tamanios, margin-top);
+
+    .sup-inf {
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 60px 0;
+        position: relative;
+
+        img {
+            position: relative;
+            display: block;
+            width: 100%;
+            box-shadow: 0 3px 6px map.get(maps.$colores, color-sombra);
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+        }
+
+        a {
+            @extend %nav-enlaces;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: map.get(maps.$colores, color-primario);
+            border: solid 2px map.get(maps.$colores, color-primario);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        &:hover a {
+            opacity: 1;
+        }
+    }
+}

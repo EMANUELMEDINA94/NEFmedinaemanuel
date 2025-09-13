@@ -1,0 +1,80 @@
+@use 'sass:map';
+@use '../utilities/maps';
+
+/* HEADER */
+header.fixed-top {
+    background-color: map.get(maps.$colores, color-hedfooter);
+    padding: 8px 0;
+    z-index: 1030;
+
+    // logo
+    .logo {
+        font-size: 32px;
+        font-weight: bold;
+        color: map.get(maps.$colores, color-primario);
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
+    // Hamburguesa
+    .navbar-toggler {
+        i {
+            font-size: 24px;
+            color: map.get(maps.$colores, color-primario);
+        }
+    }
+
+    // Menú links desktop
+    .navbar-nav {
+        .nav-link {
+            font-weight: 500;
+            color: map.get(maps.$colores, color-varios);
+            background-color: map.get(maps.$colores, color-hedfooter);
+            padding: 4px 8px;
+        }
+
+        .nav-link:hover {
+            transform: scale(1.1);
+            color: map.get(maps.$colores, color-primario);
+        }
+    }
+
+    // Buscador
+    .buscador-form {
+        .form-control {
+            border-radius: 50px;
+            padding: 5px 12px;
+            font-size: 15px;
+        }
+
+        .btn {
+            border: none;
+            background: none;
+            color: map.get(maps.$colores, color-varios);
+        }
+    }
+
+    // Carrito 
+    .carrito-btn {
+        border: none;
+        background: none;
+        font-size: 20px;
+        color: map.get(maps.$colores, color-varios);
+    }
+
+    // Menú desplegable mobile/tablet
+    #menuPrincipal {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: map.get(maps.$colores, color-hedfooter);
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        z-index: 1040;
+
+        .nav-link {
+            padding: 10px 0;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@use 'sass:map';
+@use '../utilities/maps';
+@use '../Utilities/extends';
+
+/* SOBRE NOSOTROS */
+.mainnosotros {
+    @extend %flex-center;
+    margin-top: 10%;
+    font-size: large;
+}
+
+
+.nuestrahistoria {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 8%;
+    text-align: justify;
+    hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    justify-items: center;
+
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+    }
+}

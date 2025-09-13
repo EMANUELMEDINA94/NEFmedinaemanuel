@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> NEF clothing | Ropa y accesorios masculinos </title>
 
-    <!--iconos-->
+    <!-- ICONOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 
-    <!-- fuentes -->
+    <!-- FUENTES -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
     <!-- BOOSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- ANIMACIONES-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -54,7 +58,8 @@
                 <div class="col-auto d-flex justify-content-end align-items-center">
                     <form class="d-flex buscador-form me-2">
                         <label for="buscador" class="visually-hidden">Buscar</label>
-                        <input class="form-control" type="search" id="buscador" name="buscador" placeholder="¿Qué buscas?">
+                        <input class="form-control" type="search" id="buscador" name="buscador"
+                            placeholder="¿Qué buscas?">
                         <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                     <button class="carrito-btn"><i class="fa-solid fa-bag-shopping"></i></button>
@@ -82,23 +87,26 @@
             <!--aca va un banner de la marca-->
             <div class="bannerprincipal">
                 <img src="assets/img/banner/banner index.webp" alt="">
-                <p> 3, 6 y 9 cuotas sin interes con todos los bancos </p>
+                <div>
+                    <p> 3, 6 y 9 cuotas sin interes con todos los bancos </p>
+                    <p> ENVIO GRATIS en compras superiores a $190.000 </p>
+                </div>
             </div>
             <div>
-                <h1> Descubri nuestra coleccion 2025 </h1>
+                <h1> Coleccion verano SS'26 </h1>
             </div>
         </main>
     </section>
 
     <!-- SUP/INF segunda seccion del index-->
-    <section class="superiorinferior">
-        <div id="superior">
+    <section class="superiorinferior" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="sup-inf">
             <!--enlace relativo de ropa superior-->
             <img src="assets/img/buzos/superior.png" alt="Superior">
             <a href="pages/superior.html">ver categoria</a>
         </div>
 
-        <div id="inferior">
+        <div class="sup-inf">
             <!--enlace relativo de ropa inferior-->
             <img src="assets/img/pantalones/inferior.png" alt="Inferior">
             <a href="pages/inferior.html">ver categoria</a>
@@ -106,7 +114,7 @@
     </section>
 
     <!-- OFERTAS tercera seccion del index-->
-    <section class="ofertas">
+    <section class="ofertas" data-aos="zoom-in" data-aos-duration="1500">
         <div class="div1">
             <h2> Rave sale </h2>
             <p>Hasta 50% off en toda la web</p>
@@ -117,7 +125,7 @@
         </div>
 
         <div class="div2">
-            <img src="assets/img/sale/portada.webp" alt="remeras">
+            <img class="imgrepeat" src="assets/img/sale/portada.webp" alt="remeras">
             <!--enlace para tablet/celular-->
             <nav class="enlacetablet">
                 <a href="pages/sale.html">Ver categoria</a>
@@ -126,16 +134,16 @@
     </section>
 
     <!-- LOCAL cuarta seccion del index -->
-    <section class="local">
+    <section class="local" data-aos="zoom-in" data-aos-duration="1500">
         <div class="direccion">
             <h2> Local </h2>
-            <p> Local Palermo: Godoy Cruz 2573 - 13:00 a 20:00 hs </p>
+            <p> <i class="fa-solid fa-location-dot" style="color: red;"></i> Palermo: Godoy Cruz 2573 - 13:00 a 20:00 hs </p>
             <p> | Envíos gratis desde 150k | </p>
-            <p class="compra"> <strong> compra online y retira en nuestro local </strong></p>
+            <p class="compra"> <strong> comprá online y retira en nuestro local </strong></p>
         </div>
 
         <div class="vidriera">
-            <img src="assets/img/local/local.png" alt="local">
+            <img class="imgrepeat" src="assets/img/local/local.png" alt="local">
         </div>
         <div class="localtablet">
             <h2>Local</h2>
@@ -177,6 +185,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

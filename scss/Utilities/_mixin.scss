@@ -1,0 +1,16 @@
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin nav-tablet {
+    font-size: 12px;
+    width: 150px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    border-radius: 10px;
+}

@@ -1,0 +1,198 @@
+@use 'sass:map';
+@use '../utilities/maps';
+@use '../Utilities/Mixin';
+
+/* FORMATO PARA TABLET */
+@media (max-width: 991px) {
+    header {
+        .row.align-items-center {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .main {
+        .bannerprincipal {
+            img {
+                margin-top: 52px;
+                height: 550px;
+            }
+
+            div {
+                p {
+                    font-size: map.get(maps.$tamanios, pixeles-tablet);
+                }
+            }
+        }
+    }
+
+    .superiorinferior {
+        .sup-inf {
+            margin: 0 40px 0;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                @include Mixin.nav-tablet;
+                border-radius: 0%;
+                border: solid 2px map.get(maps.$colores, color-primario);
+                background-color: black;
+                position: static;
+                opacity: 1;
+                margin-top: 7%;
+                color: map.get(maps.$colores, color-primario);
+            }
+        }
+    }
+
+    /* OFERTAS */
+    .ofertas {
+        margin-top: 10%;
+        @include Mixin.flex-center;
+
+        .div1 {
+            a {
+                display: none;
+            }
+        }
+
+        .div2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .imgrepeat {
+                margin-top: 2%;
+            }
+
+            .enlacetablet {
+                @include Mixin.flex-center;
+                margin-top: 10px;
+
+                a {
+                    @include Mixin.nav-tablet;
+                    text-decoration: none;
+                    text-align: center;
+                    margin-top: 7%;
+                    border: solid 2px map.get(maps.$colores, color-primario);
+                    border-radius: 0%;
+                    background-color: black;
+                    color: map.get(maps.$colores, color-primario);
+                }
+            }
+        }
+    }
+
+    /* LOCAL */
+    .local {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        .direccion {
+            margin-left: 0%;
+            margin-top: 2%;
+
+            p {
+                font-size: map.get(maps.$tamanios, pixeles-tablet);
+            }
+
+            h2 {
+                display: none;
+            }
+
+            .compra {
+                display: none;
+            }
+        }
+
+
+        .localtablet {
+            display: flex;
+            justify-content: center;
+        }
+
+        .vidriera {
+            justify-items: center;
+
+            .imgrepeat {
+                margin-top: 2%;
+                margin-bottom: 2%;
+            }
+        }
+    }
+
+    /* FOOTER */
+    .footer {
+        .mail {
+            .formulario {
+                font-size: 17px;
+
+                .box {
+                    font-size: map.get(maps.$tamanios, pixeles-tablet);
+                }
+
+                .boton {
+                    font-size: map.get(maps.$tamanios, pixeles-tablet);
+                }
+            }
+        }
+
+        .infofooter {
+            ul {
+                li {
+                    font-size: map.get(maps.$tamanios, pixeles-tablet);
+                    margin: 0% 70px 0%;
+                    width: 160px;
+                    height: 160px;
+                }
+            }
+        }
+    }
+
+    /* HTML SUPERIOR, INFERIOR Y OFERTAS */
+    .mainsuperior {
+        font-size: map.get(maps.$tamanios, pixeles-tablet);
+    }
+
+    .prendasuperior {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+            margin-top: 10%;
+            margin-bottom: 12%;
+
+            img {
+                width: 300px;
+                height: 450px;
+            }
+        }
+    }
+
+    /* SOBRE NOSOTROS */
+    .mainnosotros {
+        margin: 100px 40px 0;
+        text-align: center;
+    }
+
+    .nuestrahistoria {
+        column-gap: 5%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+}

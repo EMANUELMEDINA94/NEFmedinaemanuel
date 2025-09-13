@@ -1,0 +1,37 @@
+@use 'sass:map';
+@use '../utilities/maps';
+@use '../Utilities/extends';
+
+/*ofertas*/
+.ofertas {
+    margin-top: map.get(maps.$tamanios, margin-top);
+    display: flex;
+    flex-direction: row;
+
+    .div1 {
+        font-size: 130%;
+        width: 100%;
+        text-align: center;
+        @extend %flex-center;
+
+        .salenav {
+            a {
+                @extend %nav-enlaces;
+                background: black;
+                padding: 8px;
+                border: solid 2px map.get(maps.$colores, color-primario);
+                color: map.get(maps.$colores, color-primario);
+            }
+        }
+    }
+
+    .div2 {
+        .imgrepeat {
+            @extend %imgrepeat;
+        }
+    }
+
+    .enlacetablet {
+        display: none;
+    }
+}

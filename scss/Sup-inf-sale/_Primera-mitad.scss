@@ -1,0 +1,35 @@
+@use 'sass:map';
+@use '../utilities/maps';
+
+/* HTML SUPERIOR, INFERIOR Y OFERTAS */
+.bannersuperior {
+    margin-top: 50px;
+
+    img {
+        width: 100vw;
+        max-width: 100vw;
+        margin-left: calc(-5vw);
+    }
+}
+
+.mainsuperior {
+    margin-top: map.get(maps.$tamanios, margin-top);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    div {
+        .lista {
+            margin-top: map.get(maps.$tamanios, margin-top);
+            border: none;
+            text-decoration: underline;
+            font-size: map.get(maps.$tamanios, pixeles-footer);
+        }
+    }
+}

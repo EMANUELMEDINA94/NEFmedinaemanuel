@@ -1,0 +1,37 @@
+@use 'utilities/maps';
+@use 'utilities/extends';
+
+//HEADER-FOOTER 
+@use 'Components/Header';
+@use 'Components/Footer';
+
+//INDEX
+@use 'Index/Main';
+@use 'Index/Sup-inf';
+@use 'Index/Ofertas';
+@use 'Index/Local';
+
+//SUPERIOR INFERIOR Y OFERTAS
+@use 'Sup-inf-sale/Primera-mitad';
+@use 'Sup-inf-sale/Segunda-mitad';
+
+//SOBRE NOSOTROS
+@use 'Nosotros/Nosotros';
+
+//GENERALES
+@use 'Generales/Generales';
+
+//FORMATO TABLET
+@use 'Tablet/Tablet';
+
+//FORMATO MOBILE
+@use 'Mobile/Mobile';
+
+
+
+
+
+
+
+
+
